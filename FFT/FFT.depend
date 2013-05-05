@@ -1,0 +1,73 @@
+# depslib dependency file v1.0
+1367689388 source:/home/wiso/C++/FFT/lib/Comp/NT_FFT_Comp.cpp
+	"../../inlcude/Comp/NT_FFT_Comp.h"
+	<iostream>
+	<iostream>
+
+1367383694 /home/wiso/C++/FFT/inlcude/Comp/NT_FFT_Comp.h
+	"../Globals.h"
+
+1367680836 /home/wiso/C++/FFT/inlcude/Globals.h
+	<complex>
+
+1367383694 source:/home/wiso/C++/FFT/lib/Comp/T1_FFT_Comp.cpp
+	"../../inlcude/Comp/T1_FFT_Comp.h"
+
+1367383694 /home/wiso/C++/FFT/inlcude/Comp/T1_FFT_Comp.h
+	<iostream>
+	<pthread.h>
+	"../Globals.h"
+	"NT_FFT_Comp.h"
+
+1367689436 source:/home/wiso/C++/FFT/lib/Comp/T2_FFT_Comp.cpp
+	"../../inlcude/Comp/T2_FFT_Comp.h"
+
+1367383694 /home/wiso/C++/FFT/inlcude/Comp/T2_FFT_Comp.h
+	<pthread.h>
+	<iostream>
+	"../Globals.h"
+	"NT_FFT_Comp.h"
+
+1367611579 source:/home/wiso/C++/FFT/lib/Comp/V_FFT_Comp.cpp
+	"../../inlcude/Comp/V_FFT_Comp.h"
+
+1367678695 source:/home/wiso/C++/FFT/lib/Decomp/NT_FFT_Decomp.cpp
+	"../../inlcude/Decomp/NT_FFT_Decomp.h"
+	<iostream>
+	<iostream>
+
+1367676585 /home/wiso/C++/FFT/inlcude/Decomp/NT_FFT_Decomp.h
+	"../Globals.h"
+
+1367678705 source:/home/wiso/C++/FFT/lib/Decomp/T1_FFT_Decomp.cpp
+	"../../inlcude/Decomp/T1_FFT_Decomp.h"
+
+1367665841 /home/wiso/C++/FFT/inlcude/Decomp/T1_FFT_Decomp.h
+	"../Globals.h"
+	<iostream>
+	"NT_FFT_Decomp.h"
+	<pthread.h>
+
+1367690728 source:/home/wiso/C++/FFT/test/main.cpp
+	<iostream>
+	<fstream>
+	"../inlcude/FFT.h"
+
+1367383694 /home/wiso/C++/FFT/inlcude/FFT.h
+	"Globals.h"
+	"Decomp/NT_FFT_Decomp.h"
+	"Decomp/T1_FFT_Decomp.h"
+	"Comp/NT_FFT_Comp.h"
+	"Comp/T1_FFT_Comp.h"
+	"Comp/T2_FFT_Comp.h"
+	"Comp/V_FFT_Comp.h"
+
+1367611589 /home/wiso/C++/FFT/inlcude/Comp/V_FFT_Comp.h
+	<immintrin.h>
+	"../Globals.h"
+
+1367676305 source:/home/wiso/C++/FFT/lib/Globals.cpp
+	"../inlcude/Globals.h"
+
+1367470012 source:/home/wiso/C++/FFT/lib/Comp/VT2_FFT_Comp.cpp
+
