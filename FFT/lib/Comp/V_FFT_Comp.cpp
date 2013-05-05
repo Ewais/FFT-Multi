@@ -49,6 +49,7 @@ VBFOut V_ButterFly(float *FirstReal,float *FirstImag,float *SecondReal,float *Se
     _mm_store_ps(&Temp[0],HarmonicV);
     for(int i = 0;i < 4;i++)
     {
+
         ExpReal[i] = cos(Temp[i]);
         ExpImag[i] = -sin(Temp[i]);
     }
