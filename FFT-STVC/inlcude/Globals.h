@@ -3,9 +3,9 @@
 
 #include <complex>
 
-#define SIZE 65536              /// Size of time domain signal
-//#define SIZE 16
-#define THREAD_NUM 8    /// To be made arbitrary
+//#define SIZE 65536              /// Size of time domain signal
+#define SIZE 32
+#define THREAD_NUM 4    /// To be made arbitrary
 #define Pi 3.14159265359
 
 using namespace std;

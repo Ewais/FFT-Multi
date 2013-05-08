@@ -32,7 +32,8 @@ void CUDA_FFT_Comp(void)
 	cudaMalloc(&Spectrum_GPU,sizeof(Decomposed));
 	cudaMemcpy(Spectrum_GPU,&Decomposed,sizeof(Decomposed),cudaMemcpyHostToDevice);
 	for(int Size = 1;Size <SIZE;Size*=2)
-		CUDA_ButterFly<<<Blocks,MaxThread>>>(Spectrum_GPU,Size);
+		//CUDA_ButterFly<<<Blocks,MaxThread>>>(Spectrum_GPU,Size);
+		CUDA_ButterFly<<<1,32>>>(Spectrum_GPU,Size);
 	cudaMemcpy(&Spectrum,Spectrum_GPU,sizeof(Decomposed),cudaMemcpyDeviceToHost);
 	cudaFree(Spectrum_GPU);
 }

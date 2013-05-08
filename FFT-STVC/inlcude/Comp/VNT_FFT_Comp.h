@@ -14,6 +14,6 @@ struct VBFOut                              /// Holds the complex outputs of the 
 
 void VNT_FFT_Comp(void);
 void VNT_FFT_Comp(complex<float>* InArray,complex<float>* OutArray,int ElementSize,int ArraySize);
-VBFOut V_ButterFly(float *FirstReal,float *FirstImag,float *SecondReal,float *SecondImag,int *Size,int *Harmonic);
+VBFOut V_ButterFly(float *FirstReal,float *FirstImag,float *SecondReal,float *SecondImag,int Size,int *Harmonic);
 
 #endif // V_FFT_COMP_H_INCLUDED

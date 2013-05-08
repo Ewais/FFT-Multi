@@ -2,13 +2,13 @@
 #include <fstream>
 #include "../inlcude/FFT.h"
 
-#define FILE
+//#define FILE
 
 int main()
 {
 //We start by taking the input signal .. as a File or Predefined
-		complex<float> signal[SIZE];
 #ifdef FILE
+        complex<float> signal[SIZE];
         ifstream InputSignalFile;
         InputSignalFile.open("Input.txt");
         for(int i = 0;i<SIZE;i++)
@@ -18,7 +18,7 @@ int main()
         InputSignalFile.close();
 #endif
 #ifndef FILE
-        signal = {0,0,0,1,1,1,1,1,1,1,1,1,1,0,0,0};
+        complex<float> signal[SIZE] = {0,0,0,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,0,0,0};
 #endif
 
 
@@ -97,7 +97,7 @@ int main()
         }
         ST_File.close();
 #endif
-        /*VNT_FFT_Comp();
+        VNT_FFT_Comp();
 #ifndef FILE
         cout << endl <<endl << "NonThreaded Vector Spectrum : " << endl;   /// Print the spectrum
         for(int i = 0;i < SIZE;i++)
@@ -130,7 +130,7 @@ int main()
             VT_File << real(Spectrum[i]) << '\t';
         }
         VT_File.close();
-#endif*/
+#endif
         CUDA_FFT_Comp();
 #ifndef FILE
         cout << endl << endl << "CUDA Spectrum : " << endl;   /// Print the spectrum
