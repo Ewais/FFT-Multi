@@ -82,7 +82,7 @@ int main()
 #endif
         ST_FFT_Comp();
 #ifndef FILE
-        cout << endl <<endl << "Threaded T2 Spectrum : " << endl;   /// Print the spectrum
+        cout << endl <<endl << "Threaded Spectrum : " << endl;   /// Print the spectrum
         for(int i = 0;i < SIZE;i++)
         {
               cout << real(Spectrum[i]) << "   " ;
